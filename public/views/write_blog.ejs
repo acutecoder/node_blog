@@ -1,0 +1,18 @@
+<form id="write_blog_form" class="box totheleft">
+	<fieldset>
+		<legend><%= write_title %> Blog</legend>
+		<ul>
+			<li>
+				<label for="write_blog_title">Title: </label>
+				<input type="text" id="write_blog_title" name="write_blog_title" value="<%= title %>" />
+			</li>
+			<li>
+				<textarea id="write_blog_entry"><%= entry %></textarea>
+			</li>
+			<li>
+				<button id="write_enter">Enter</button>
+				<button id="write_clear">Clear</button>
+			</li>
+		</ul>
+	</fieldset>
+</form>

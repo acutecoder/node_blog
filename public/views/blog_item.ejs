@@ -1,0 +1,28 @@
+<tr>
+	<td>
+		<% if( title.length <= 23 ){ %>
+			<%= title %>
+		<% } else { %>
+			<%= title.substring( 0, 20 ) %>...
+		<% } %>
+	</td>
+	<td>
+		<% if( entry.length <= 153 ) { %>
+			<%= entry %>
+		<% } else { %>
+			<%= entry.substring( 0, 150 ) %>...
+		<% } %>
+	</td>
+	<td>
+		date
+	</td>
+	<td>
+		updated
+	</td>
+	<td>
+		<a href="#edit" data-id="<%= n %>">Edit</a>
+	</td>
+	<td>
+		<a href="#delete" data-id="<%= n %>">Delete</a>
+	</td>
+</tr>

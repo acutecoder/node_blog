@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+		<link rel='stylesheet' href='/css/dashboard.css' />
+		<link rel='stylesheet' href='/css/style.css' />
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="main_header">
+				<h1 id="title" class="center"><%= title %></h1>
+			</header>
+			<div id="contents">
+
+<!-- write blog -->
+
+				<div id="write_blog">
+					<a id="write_blog_switch" href="#write">New</a>
+					<div id="write_blog_holder"></div>
+				</div>
+
+<!-- blog list -->
+
+				<div id="blog_list_container">
+					<table id="blog_list_table">
+						<thead>
+							<tr>
+								<th>Title</th>
+								<th>Entry</th>
+								<th>Posted</th>
+								<th>Updated</th>
+								<th colspan="2"></th>
+							</tr>
+						</thead>
+						<tbody id="blog_list"></tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var BLOGS = [<%= blogs %>];
+	</script>
+	<script type="text/javascript" src="/js/libs/json2.js"></script>
+	<script type="text/javascript" src="/js/libs/jquery.js"></script>
+	<script type="text/javascript" src="/js/libs/autogrow.js"></script>
+	<script type="text/javascript" src="/js/libs/jquery-ui.js"></script>
+	<script type="text/javascript" src="/js/libs/underscore.js"></script>
+	<script type="text/javascript" src="/js/libs/backbone.js"></script>
+	<script type="text/javascript" src="/js/libs/ejs.js"></script>
+	<script type="text/javascript" src="/js/dash.js"></script>
+</html>
+
+

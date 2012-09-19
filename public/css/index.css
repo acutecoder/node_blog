@@ -1,0 +1,140 @@
+.box {
+  	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.box.totheleft { 
+	left: 0px;
+}
+
+.box.totheright {
+	left: 450px;
+}
+
+/*		ANIMATION	*/
+
+.thumb {
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background: #006579;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
+
+.thumb:hover {
+	cursor: pointer;
+}
+
+#thumb_list {
+	list-style: none;
+	width: 100%;
+	height: 80px;
+	position: relative;
+}
+
+#thumb_list li {
+	float: left;
+	width: 18%;
+	height: 100%;
+	position: absolute;
+}
+
+#thumb_list li:first-child {
+	left:0;
+}
+
+#thumb_list li:nth-child(2) {
+	left: 20.8%;
+}
+
+#thumb_list li:nth-child(2) div.thumb.open {
+	left:-115%;
+}
+
+#thumb_list li:nth-child(3) {
+	left: 41.3%;
+}
+
+#thumb_list li:nth-child(3) div.thumb.open {
+	left:-230%;
+}
+
+#thumb_list li:nth-child(4) {
+	left: 61.7%;
+}
+
+#thumb_list li:nth-child(4) div.thumb.open {
+	left:-343%;
+}
+
+#thumb_list li:last-child {
+	left: 82%;
+}
+
+#thumb_list li:last-child div.thumb.open {
+	left:-456%;
+}
+
+.thumb.open {
+	top: 150%;
+	width: 556%;
+	height: 200%;
+	cursor: default;
+}
+
+.thumb.open:hover {
+	cursor: default;
+}
+
+.blog_entry {
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    padding: 20px;
+    color: #fff;
+}
+
+#log_in {
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background: #006579;
+    border-radius: 0 0 0 20px;
+    padding: 5px 5px 5px 15px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+#log_in a {
+	color: #fff;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.login_form {
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	position: relative;
+    width: 165px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.login_form button {
+	float: right;
+}
