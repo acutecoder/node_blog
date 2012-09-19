@@ -111,6 +111,7 @@ a#write_blog_switch {
 
 #write_blog_form li:first-child {
 	margin: 10px auto 10px auto;
+	line-height: 25px;
 }
 
 #write_blog_form li:last-child {
@@ -118,7 +119,8 @@ a#write_blog_switch {
 }
 
 #write_blog_title {
-	width: 94.887%;
+	width: 93%;
+	float: right;
 }
 
 #write_blog_entry {
