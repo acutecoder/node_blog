@@ -31,19 +31,16 @@ var Autogrow = (function() {
             var $this = typeof el === 'string' ? $( el ) : el;
             var height = $this.height();
 
-            //(function() {
-                $this.change( function() {
-                    update.call( $this, height );
-                }).keyup( function() {
-                    update.call( $this, height );
-                }).keydown( function() {
-                    update.call( $this, height );
-                });
+            $this.change( function() {
                 update.call( $this, height );
-           // })( $this, height );
-            
-        }
-        , remove : function( el ) {
+            }).keyup( function() {
+                update.call( $this, height );
+            }).keydown( function() {
+                update.call( $this, height );
+            });
+            update.call( $this, height );            
+        },
+        remove : function( el ) {
             var $this = typeof el === 'string' ? $( el ) : el;
         }
 

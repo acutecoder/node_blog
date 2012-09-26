@@ -1,0 +1,6 @@
+{
+	"blog_entry" : "blog_entry.ejs",
+	"blog_item"  : "blog_item.ejs",
+	"login"		 : "login.ejs",
+	"write_blog" : "write_blog.ejs"
+}

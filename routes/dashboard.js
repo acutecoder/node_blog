@@ -1,5 +1,3 @@
-
-
 exports.dashboard = function( req, res ) {
 
 	var render_data = {
@@ -9,7 +7,6 @@ exports.dashboard = function( req, res ) {
 	mongoose = require('mongoose'),
 
 	render = function( data ) {
-
 		mongoose.disconnect();
 		res.render( 'dashboard', data );
 	},
